@@ -12,4 +12,20 @@ NoteApp là ứng dụng được phát triển bằng Python Flask và SQLite ,
 Công nghệ được sử dụng :
 
 + Python 3.9+.
-+
++ Flask
++ SQLAlchemy
++ boostrap 5
++ SQLLite
++ Gemini API
+
+Cấu trúc thư mục : 
+noteapp-ai/
+│── app.py               
+│── notes.db             
+│── requirements.txt    
+│── templates/
+│    └── index.html 
+      └── edit.html
+│── README.md            
+
+
