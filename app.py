@@ -36,8 +36,8 @@ def summarize(note_id):
     if note:
         try:
             genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-            model = genai.GenerativeModel("models/gemini-1.5-flash")
-            response = model.generate_content([f"Tóm tắt ghi chú này: {note.content}"])
+            model = genai.GenerativeModel("models/gemini-2.0-flash-lite")
+            response = model.generate_content([f"{note.content}"])
             note.summary = response.text.strip()
         except Exception as e:
             note.summary = f"Lỗi AI: {str(e)}"
